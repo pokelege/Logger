@@ -55,7 +55,7 @@ public class Logger {
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 
-		Query query = session.createQuery("from logstring");
+		Query query = session.createQuery("from LogString");
 		List<LogString> list = query.list();
 		session.close();
 		ModelAndView mv = new ModelAndView("logstring");
