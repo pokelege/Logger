@@ -13,10 +13,10 @@
 		<th>Instance ID</th>
 		<th>Message</th>
 		</tr>
-        <% for(int i = 0; i < request.getParameter("messages").size(); ++i) { %>
+        <% for(int i = 0; i < request.getAttribute("messages").size(); ++i) { %>
                 <tr>
-                <td><%=request.getParameter("messages").get(i).getInstanceId()%></td>
-                    <td><%=request.getParameter("messages").get(i).getMessage()%></td>
+                <td><%=request.getAttribute("messages").get(i).getInstanceId()%></td>
+                    <td><%=request.getAttribute("messages").get(i).getMessage()%></td>
                 </tr>
             <% } %>
 		</table>
