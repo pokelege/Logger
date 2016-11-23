@@ -48,8 +48,8 @@ public class Logger {
 		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 
-	@RequestMapping("/logString")
-	public ModelAndView logString(){
+	@RequestMapping("/logStringResult")
+	public ModelAndView logStringResult(){
 		SessionFactory sessionFactory = new Configuration().configure()
 				.buildSessionFactory();
 		Session session = sessionFactory.openSession();
