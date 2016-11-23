@@ -13,10 +13,11 @@
 		<th>Instance ID</th>
 		<th>Message</th>
 		</tr>
+		<% java.util.List<com.pokelege.logger.entity.LogString> strings = (java.util.List<com.pokelege.logger.entity.LogString>)request.getAttribute("messages"); %>
         <% for(int i = 0; i < request.getAttribute("messages").size(); ++i) { %>
                 <tr>
-                <td><%=request.getAttribute("messages").get(i).getInstanceId()%></td>
-                    <td><%=request.getAttribute("messages").get(i).getMessage()%></td>
+                <td><%=strings.get(i).getInstanceId()%></td>
+                    <td><%=strings.get(i).getMessage()%></td>
                 </tr>
             <% } %>
 		</table>
