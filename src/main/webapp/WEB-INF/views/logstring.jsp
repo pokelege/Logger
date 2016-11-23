@@ -14,7 +14,7 @@
 		<th>Message</th>
 		</tr>
 		<% java.util.List<com.pokelege.logger.entity.LogString> strings = (java.util.List<com.pokelege.logger.entity.LogString>)request.getAttribute("messages"); %>
-        <% for(int i = 0; i < request.getAttribute("messages").size(); ++i) { %>
+        <% for(int i = 0; i < strings.size(); ++i) { %>
                 <tr>
                 <td><%=strings.get(i).getInstanceId()%></td>
                     <td><%=strings.get(i).getMessage()%></td>
