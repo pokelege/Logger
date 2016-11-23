@@ -26,7 +26,7 @@ public class Logger {
 		mv.addObject("name", name);
 		return mv;
 	}
-
+	@RequestMapping("/logString")
 	public ResponseEntity<String> logString(
 			@RequestParam() String instanceId,
 	        @RequestParam String message
