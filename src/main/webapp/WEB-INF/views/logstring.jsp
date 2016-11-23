@@ -15,8 +15,8 @@
 		</tr>
         <% for(int i = 0; i < ${messages}.size(); i+=1) { %>
                 <tr>
-                <td><%=${messages}.get(i).getInstanceId()%></td>
-                    <td><%=${messages}.get(i).getMessage()%></td>
+                <td><%=${messages}.get(i).getInstanceId();%></td>
+                    <td><%=${messages}.get(i).getMessage();%></td>
                 </tr>
             <% } %>
 		</table>
